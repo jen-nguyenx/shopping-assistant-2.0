@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-from user_agents import get_random_headers
+from price_tracker.user_agents import get_random_headers
 import logging
-import constants as c
+import price_tracker.constants as c
 from typing import List
 
 logger = logging.getLogger()
