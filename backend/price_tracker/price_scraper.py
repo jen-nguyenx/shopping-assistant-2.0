@@ -46,7 +46,3 @@ def price_scraper(url) -> List[int]:
         return None, None
 
 
-url = "https://www.chemistwarehouse.com.au/buy/110910/nature-s-way-complete-daily-multivitamin-200-tablets"
-a, b = price_scraper(url)
-print(a)
-print(b)
