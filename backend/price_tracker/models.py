@@ -5,6 +5,9 @@ class Product(models.Model):
     english_name = models.CharField(max_length=200)
     url = models.URLField()
 
+    def __str__(self):
+        return self.english_name
+
 
 class HistoricalPrice(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
