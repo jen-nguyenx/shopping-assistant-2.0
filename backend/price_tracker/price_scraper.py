@@ -54,7 +54,7 @@ def extract_product_name(url: str) -> str:
         soup = BeautifulSoup(response.text, "html.parser")
 
         target_element = soup.find("div")
-    
+
     except Exception as e:
         logging.error(f"Unexpected error occurred {e}")
         return None
