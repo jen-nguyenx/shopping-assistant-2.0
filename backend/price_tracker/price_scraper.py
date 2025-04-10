@@ -46,3 +46,15 @@ def price_scraper(url) -> List[int]:
         return None, None
 
 
+def extract_product_name(url: str) -> str:
+    try:
+        headers = get_random_headers()
+
+        response = requests.get(url, headers=headers)
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        target_element = soup.find("div")
+    
+    except Exception as e:
+        logging.error(f"Unexpected error occurred {e}")
+        return None

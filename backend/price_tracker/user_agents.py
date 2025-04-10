@@ -1,5 +1,4 @@
 import random
-import requests
 
 USER_AGENTS = [
     # Chrome (Windows)
