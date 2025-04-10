@@ -58,3 +58,16 @@ def extract_product_name(url: str) -> str:
     except Exception as e:
         logging.error(f"Unexpected error occurred {e}")
         return None
+
+def bulk_extract_brand_names(url: str):
+    try:
+        headers = get_random_headers()
+
+        response = requests.get(url, headers=headers)
+        soup = BeautifulSoup(response.text, features="html.parser")
+
+        
+
+    except Exception as e:
+        logging.error(f"Unexpected error occurred {e}")
+        return None

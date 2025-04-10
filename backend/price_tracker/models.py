@@ -1,9 +1,16 @@
 from django.db import models
 
+class Brand(models.Model):
+    name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
+
 
 class Product(models.Model):
     english_name = models.CharField(max_length=200)
     url = models.URLField()
+    brand = models.ForeignKey(Brand, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
         return self.english_name
@@ -19,8 +26,3 @@ class HistoricalPrice(models.Model):
         return f"{self.product.english_name + self.timestamp}"
 
 
-class Brand(models.Model):
-    name = models.CharField(max_length=200)
-
-    def __str__(self):
-        return self.name
