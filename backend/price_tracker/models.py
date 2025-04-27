@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Brand(models.Model):
     name = models.CharField(max_length=200)
 
@@ -24,5 +25,3 @@ class HistoricalPrice(models.Model):
 
     def __str__(self):
         return f"{self.product.english_name + self.timestamp}"
-
-

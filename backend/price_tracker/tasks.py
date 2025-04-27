@@ -1,4 +1,5 @@
 from celery import shared_task
+
 from price_tracker.price_scraper import price_scraper
 
 

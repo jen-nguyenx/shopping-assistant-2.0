@@ -5,6 +5,6 @@ SPAN_ID = {
 SPAN_CLASS = {"discounted": ".product__price", "full": ""}
 
 BRAND_LINK = {
-    "Vitamins": "https://www.chemistwarehouse.com.au/shop-online/81/vitamins", 
-    "Skincare": "https://www.chemistwarehouse.com.au/shop-online/665/skin-care"
+    "Vitamins": "https://www.chemistwarehouse.com.au/shop-online/81/vitamins",
+    "Skincare": "https://www.chemistwarehouse.com.au/shop-online/665/skin-care",
 }

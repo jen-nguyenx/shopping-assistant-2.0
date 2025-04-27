@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
-from price_tracker.price_scraper import extract_product_name
+
 from price_tracker.models import Product
+from price_tracker.price_scraper import extract_product_name
 
 
 class Command(BaseCommand):
