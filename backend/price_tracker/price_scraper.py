@@ -1,7 +1,6 @@
 import logging
 from typing import List
 
-import requests
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 
@@ -82,7 +81,7 @@ def extract_product_name(soup: BeautifulSoup) -> str:
     return name
 
 
-def bulk_extract_brand_names(url: str):
+def bulk_extract_brand_names(url: str) -> List[str]:
     try:
         options = uc.ChromeOptions()
 
